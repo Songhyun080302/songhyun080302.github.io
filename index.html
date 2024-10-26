@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백종원 챗봇</title>
+    <style>
+        /* 기본 스타일 추가 */
+        body { font-family: Arial, sans-serif; }
+        #chatbot { width: 400px; height: 500px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>백종원 챗봇</h1>
+    <div id="chatbot"></div>
+    <script>
+       <script>
+!function(w, d, s, ...args){
+  var div = d.createElement('div');
+  div.id = 'aichatbot';
+  d.body.appendChild(div);
+  w.chatbotConfig = args;
+  var f = d.getElementsByTagName(s)[0],
+  j = d.createElement(s);
+  j.defer = true;
+  j.type = 'module';
+  j.src = 'https://aichatbot.sendbird.com/index.js';
+  f.parentNode.insertBefore(j, f);
+}(window, document, 'script', '8463D395-D167-42ED-A0B0-2F7DE6FBF1D1', 'onboarding_bot', {
+  apiHost: 'https://api-cf-ap-2.sendbird.com',
+});
+</script>
+    </script>
+</body>
+</html>
